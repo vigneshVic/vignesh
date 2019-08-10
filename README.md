@@ -34,9 +34,35 @@ is used to store information to be used across multiple pages on the client as w
 # GET - Send data in url.
 # POST - secure transfer data.
 # PHP does not support multiple inheritance
-# difference b/w delete and truncate?
+# difference b/w delete and truncate and drop?
+truncate - delete all rows in a table. can't used with index. faster. DDL. remove allocated spaces too.
+delete - delete rows with where condition. can used with index. can be rolled back. DML.
+drop - remove table from db. DDL.
+# diff b/w between explode and split
+ split - uses pattern to split strings into array.
+ explode - use string to split
 
-# oops
+# =========sql================
+# DDL(Data Definition Language) 
+  create and modify the structure of database
+  create , drop, truncate, alter, command , rename
+# DML(Data Manipulation Language)
+  select , insert, update, delete
+# DCL(Data Control Language)
+  deal with permissions
+  GRANT , REVOKE
+# TCL(transaction Control Language) 
+  TCL commands deals with the transaction within the database.
+  commit, rollback, savepoint, set transaction
+# sql storage engine types
+  innodb - faster for write,transaction, row locking,
+  MyISAM - faster for read,
+#  pivot
+ convert row data to column
+# unpivot
+  convert column data to row
+
+# =======oops===============
 # Abstract:
   abstract method is a method that is declared, but contains no implementation, subclasses to provide implementations.abstract method can not contain body. cannot private.
   abstract class cannot be instantiate. return fatal error if instantiate.
@@ -45,4 +71,3 @@ is used to store information to be used across multiple pages on the client as w
   If method in parent class as protected in child class must be protected or public, also public - must public.
   You can add more optional arguments to child class. but when defined arguments in parent class it must required in child class.
   Abstract class can extends another abstract class,Abstract class can provide the implementation of interface.But it doesn't support multiple inheritance.
-# 
