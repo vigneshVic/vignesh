@@ -1,3 +1,6 @@
+# ===========LEARN=============
+  Google Analytics, google captcha, Notification, Payment Gateway
+  
 # =====INTERVIEW QUESTIONS======
 
 # =====JAVASCRIPT QUESTIONS======
